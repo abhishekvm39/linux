@@ -10,6 +10,8 @@
 #
 #
 set -x 
+set -o pipefail
+set -e 
 
 
 #list s3 buckets 
