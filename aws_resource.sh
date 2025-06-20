@@ -28,9 +28,9 @@ aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId'
 
 #list lambda
 #
-#echo "print list of lambda functions"
+echo "print list of lambda functions"
 
-#aws lambda list-functions
+aws lambda list-functions
 
 
 #list IAM users
