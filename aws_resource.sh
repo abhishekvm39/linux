@@ -39,7 +39,7 @@ aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId'
 echo "Print IAM users"
 
 
-aws iam list-users | jq '.Users[].Username'
+aws iam list-users | jq '.Users[].UserName'
 
 
 
