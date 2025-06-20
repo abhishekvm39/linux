@@ -23,7 +23,7 @@ aws s3 ls
 #
 echo "Print list of Ec2 instances"
 
-aws ec2 describe-instances
+aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId'
 
 
 #list lambda
@@ -36,10 +36,10 @@ aws ec2 describe-instances
 #list IAM users
 #
 #
-echo Print IAM users"
+echo "Print IAM users"
 
 
-aws iam list-users
+aws iam list-users | jq '.Users[].Username'
 
 
 
